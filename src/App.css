@@ -1,38 +1,221 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.App{
+  position: relative;
+  height: auto;
   min-height: 100vh;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: flex-start;
 }
 
-.App-link {
-  color: #61dafb;
+.App header{
+  position: relative;
+  width: 80%;
+  height: 100px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.App header .logo{
+  position: relative;
+  width: auto;
+  height: auto;
+}
+
+.App header .logo h1{
+  position: relative;
+  font-family: var(--head);
+}
+
+.App header nav{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.App header nav button {
+  position: relative;
+  font-family: var(--all);
+  font-size: 18px;
+  padding: 5px;
+  outline: none;
+  border: none;
+  background: rgb(30, 50, 163);
+  cursor: pointer;
+  color: #fff;
+}
+
+.App header nav button:hover{
+  filter: brightness(1.2);
+}
+
+.App main{
+  position: relative;
+  width: 80%;
+  height: auto;
+  min-height: calc(100vh - 100px);
+}
+
+.App main section {
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.App main section h3{
+  position: relative;
+  font-family: var(--head);
+  margin-bottom: 15px;
+}
+
+.App main section a{
+  position: relative;
+  text-decoration: none;
+  color: #000;
+  background: rgb(221, 191, 23);
+  margin-bottom: 10px;
+  padding: 10px;
+  font-family: var(--all);
+}
+
+.App main section a:hover{
+  filter: brightness(0.9);
+}
+
+.App main section div{
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.App main section div a{
+  position: relative;
+}
+
+.App main section div form{
+  position: relative;
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.App main section div form h4{
+  position: relative;
+  font-family: var(--head);
+  margin-bottom: 10px;
+}
+
+.App main section div form .row{
+  position: relative;
+  margin-bottom: 10px;
+  width: auto;
+  height: auto;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.App main section div form .row label{
+  position: relative;
+  font-size: 18px;
+  font-family: var(--all);
+  width: auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.App main section div form .row label input{
+  position: relative;
+  font-size: 18px;
+  padding: 5px 2px 0px 2px;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid #000;
+  margin-left: 5px;
+  margin-right: 25px;
+}
+
+.App main section div form button{
+  position: relative;
+  font-family: var(--all);
+  font-size: 18px;
+  padding: 5px;
+  outline: none;
+  border: none;
+  background: rgb(248, 252, 3);
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+.App main section div form button:hover{
+  filter: brightness(0.9);
+}
+
+.App main section div table{
+  position: relative;
+  margin-top: 25px;
+  text-align: left;
+  width: 60%;
+  height: auto;
+  border-collapse: collapse;
+}
+
+.App main section div table thead{
+  position: relative;
+  background: rgb(30, 50, 163);
+  color: #fff;
+  user-select: none;
+}
+
+.App main section div table thead tr th{
+  position: relative;
+  font-family: var(--head);
+  padding: 5px 0px 5px 10px;
+}
+
+.App main section div table tbody{
+  position: relative;
+  background: beige;
+}
+
+.App main section div table tbody tr{
+  position: relative;
+  border-bottom: 2px solid #000;
+  font-family: var(--all);
+}
+
+.App main section div table tbody tr td{
+  position: relative;
+  padding: 5px 0px 5px 10px;
+}
+
+.App main section div table tbody tr td a{
+  background: unset;
+  margin: unset;
+  padding: unset;
+  margin-right: 20px;
+  padding: 2px;
+}
+
+.App main section div table tbody tr td a:hover{
+  text-decoration: underline;
+  filter: unset;
+  background: #cecece;
+}
+
+.App main section div table tbody tr td ul{
+  position: relative;
 }
